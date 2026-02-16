@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Raico Emprende SL - Productos Locales</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="overlay"></div>
+    <h1>Raico Emprende SL</h1>
+    <p>Productos locales con esencia de nuestra tierra</p>
+    <img src="raico.png" class="logo">
+    <p>Tu mundo ecológico a un clic</p>
+  </header>
+
+  <!-- MENÚ HAMBURGUESA -->
+  <nav>
+    <div class="menu-btn" id="menu-btn">☰</div>
+    <div class="menu" id="menu">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#productos">Productos</a>
+      <a href="#productores">Productores</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="fade-in">
+      <h2>Sobre Nosotros</h2>
+      <p>
+        En <strong>Raico Emprende SL</strong> apostamos por los productos locales,
+        artesanales y de calidad. Trabajamos directamente con productores de la zona
+        para ofrecer artículos frescos, auténticos y con historia.
+      </p>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="fade-in">
+      <h2>Nuestros Productos</h2>
+      <div class="productos">
+        <div class="producto">
+          <img src="illojuan.jpg" alt="Mermelada">
+          <h3>Mermelada</h3>
+          <p>Mermelada totalmente natural y local</p>
+        </div>
+
+        <div class="producto">
+          <img src="ñññ.jpeg" alt="Carne">
+          <h3>Carne</h3>
+          <p>Carne de nuestros carniceros locales</p>
+        </div>
+
+        <div class="producto">
+          <img src="peope.jpg" alt="Quesos">
+          <h3>Quesos Tradicionales</h3>
+          <p>Quesos elaborados con leche de cabra</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTORES -->
+    <section id="productores" class="fade-in">
+      <h2>Nuestros Productores</h2>
+      <div class="productores">
+        <div class="prod-card">
+          <img src="ñp.png" alt="Productor 1">
+          <h3>Finca El Olivar</h3>
+          <p>Especialistas en aceite ecológico de primera calidad.</p>
+        </div>
+
+        <div class="prod-card">
+          <img src="papairus.jpg" alt="Productor 2">
+          <h3>Granja La Sierra</h3>
+          <p>Productores de quesos artesanales con tradición familiar.</p>
+        </div>
+
+        <div class="prod-card">
+          <img src="si.jpg" alt="Productor 3">
+          <h3>Huerto Verde</h3>
+          <p>Verduras frescas cultivadas sin químicos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPINIONES -->
+    <section id="opiniones" class="fade-in">
+      <h2>Opiniones de Nuestros Clientes</h2>
+      <div class="opiniones">
+        <div class="opinion">
+          <p>"Productos increíbles, frescos y de calidad. Repetiré sin duda."</p>
+          <h4>- María López</h4>
+        </div>
+
+        <div class="opinion">
+          <p>"La carne es espectacular y el trato excelente."</p>
+          <h4>- Juan Pérez</h4>
+        </div>
+
+        <div class="opinion">
+          <p>"Me encantan sus mermeladas, saben a tradición."</p>
+          <h4>- Ana Torres</h4>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <video controls width="600">
+    <source src="quesadilla.mp4" type="video/mp4">
+    <source src="quesadilla.webm" type="video/webm">
+    Tu navegador no puede reproducir este video.
+</video>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="fade-in">
+      <h2>Contacto</h2>
+
+      <form class="formulario">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu email" required>
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <p>📍 Dirección: 12 Autovía A-334, Calle Ferrocarril, Baza</p>
+      <p>📞 Teléfono: 722 80 695</p>
+      <p>📧 Email: amargut379@g.educaand.es</p>
+
+      <div class="mapa">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.123!2d-2.772!3d37.490!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6548e3b1!2sBaza!5e0!3m2!1ses!2ses!4v000000"
+          width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Raico Emprende SL - Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("show");
+    });
+  </script>
+
+</body>
+</html>

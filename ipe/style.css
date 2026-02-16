@@ -1,0 +1,222 @@
+/* GENERAL */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #faf7f2;
+  color: #333;
+}
+
+/* HEADER MODERNO */
+header {
+  background: url('fondo.jpg') center/cover no-repeat;
+  color: #2c3b7a;
+  text-align: center;
+  padding: 4rem 1rem;
+  position: relative;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgb(218, 150, 72);
+}
+
+header h1, header p, header img {
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  width: 120px;
+  margin: 1rem auto;
+}
+
+/* MENÚ */
+nav {
+  background: #355e3b;
+  padding: 0.75rem;
+  position: relative;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.menu {
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* SECCIONES */
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* ANIMACIONES */
+.fade-in {
+  animation: fade 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fade {
+  to { opacity: 1; }
+}
+
+/* PRODUCTOS */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.producto {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.producto img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* PRODUCTORES */
+.productores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.prod-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.prod-card:hover {
+  transform: scale(1.03);
+}
+
+.prod-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* OPINIONES */
+.opiniones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.opinion {
+  background: #e8f5e9;
+  padding: 1rem;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+/* FORMULARIO */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.formulario button {
+  background: #355e3b;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formulario button:hover {
+  background: #4a7c59;
+}
+
+/* MAPA */
+.mapa iframe {
+  border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+  background: #4a7c59;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* RESPONSIVE MENÚ */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #355e3b;
+    padding: 1rem;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+  }
+}
